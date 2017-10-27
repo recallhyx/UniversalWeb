@@ -2,7 +2,7 @@
 
 <nav>
   <div class="nav-wrapper blue darken-1">
-    <a href="#" class="brand-logo " ><i class="button-collapse" data-activates="slide-out"></i><i class="material-icons">language</i>UniversalWeb</a>
+    <a  class="brand-logo " (click)="onHide()"><i class="button-collapse" data-activates="slide-out"></i><i class="material-icons">menu</i>UniversalWeb</a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       <li><a href="https://recallhyx.github.io/"><i class="material-icons">forum</i></a></li>
       <li><a href="#">组件</a></li>
@@ -16,17 +16,16 @@
       <img src="#">
     </div>
     <a href="#"><img class="circle" src=""></a>
-    <a href="#"><span class="white-text name">张三</span></a>
-    <a href="#"><span class="white-text email">jdandturk@sina.com</span></a>
+    <a href="#"><span class=" name">张三</span></a>
+    <a href="#"><span class=" email">jdandturk@sina.com</span></a>
   </div></li>
-  <li><a href="#"><i class="material-icons">cloud</i>带图标的第一链接</a></li>
-  <li><a href="#">第二链接</a></li>
   <li><div class="divider"></div></li>
-  <li><a class="subheader">子标题</a></li>
-  <li><a class="waves-effect" href="#!">带波纹效果的第三链接</a></li>
+  <li ><a class="waves-effect" routerLink="/moviesearch" (click)="onHide()"><i class="material-icons">movie</i>影视信息查询</a></li>
+  <li ><a class="waves-effect" routerLink="/identity" (click)="onHide()"><i class="material-icons">face</i>身份证信息查询</a></li>
 </ul>
-<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-<footer class="page-footer blue darken-1">
+<a href="#" data-activates="slide-out" class="button-collapse hide" id="maodian"><i class="material-icons">menu</i></a>
+<router-outlet></router-outlet>
+<footer class="page-footer blue darken-1" style="bottom: 0px">
 
   <div class="footer-copyright blue darken-1">
     <div class="container">
@@ -34,4 +33,5 @@
       <a class="grey-text text-lighten-4 right" href="#!">更多链接</a>
     </div>
   </div>
+
 </footer>

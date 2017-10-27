@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, ElementRef} from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  constructor(private el:ElementRef){}
+
+
+  onHide(){
+    this.el.nativeElement.querySelector('#maodian').click();
+  }
 }
+

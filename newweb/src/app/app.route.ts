@@ -5,13 +5,14 @@ import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {MovieComponent} from "./movie/movie.component";
 import {IdentityComponent} from "./identity/identity.component";
+import {WelcomeComponent} from "./welcome/welcome.component";
 
 
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/main',
+    redirectTo: 'welcome',
     pathMatch: 'full'
   },
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path:'identity',
     component: IdentityComponent
+  },
+  {
+    path:'welcome',
+    component: WelcomeComponent
   }
 ];
 

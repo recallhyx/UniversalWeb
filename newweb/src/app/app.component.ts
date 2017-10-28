@@ -9,7 +9,8 @@ import {Component, ElementRef} from '@angular/core';
 export class AppComponent {
   title = 'app';
   constructor(private el:ElementRef){}
-
+  name = 'recall'
+  email = 'quce.hu@qq.com'
 
   onHide(){
     this.el.nativeElement.querySelector('#maodian').click();

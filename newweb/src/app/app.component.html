@@ -1,37 +1,34 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
-<nav>
-  <div class="nav-wrapper blue darken-1">
-    <a  class="brand-logo " (click)="onHide()"><i class="button-collapse" data-activates="slide-out"></i><i class="material-icons">menu</i>UniversalWeb</a>
-    <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><a href="https://recallhyx.github.io/"><i class="material-icons">forum</i></a></li>
-      <li><a href="#">组件</a></li>
-      <li><a href="#">JavaScript</a></li>
-    </ul>
-  </div>
-</nav>
-<ul id="slide-out" class="side-nav">
-  <li><div class="userView">
-    <div class="background">
-      <img src="#">
-    </div>
-    <a href="#"><img class="circle" src=""></a>
-    <a href="#"><span class=" name">张三</span></a>
-    <a href="#"><span class=" email">jdandturk@sina.com</span></a>
-  </div></li>
-  <li><div class="divider"></div></li>
-  <li ><a class="waves-effect" routerLink="/moviesearch" (click)="onHide()"><i class="material-icons">movie</i>影视信息查询</a></li>
-  <li ><a class="waves-effect" routerLink="/identity" (click)="onHide()"><i class="material-icons">face</i>身份证信息查询</a></li>
-</ul>
-<a href="#" data-activates="slide-out" class="button-collapse hide" id="maodian"><i class="material-icons">menu</i></a>
-<router-outlet></router-outlet>
-<footer class="page-footer blue darken-1" style="bottom: 0px">
 
-  <div class="footer-copyright blue darken-1">
-    <div class="container">
-      © 2017 Copyright recallhyx
-      <a class="grey-text text-lighten-4 right" href="#!">更多链接</a>
+  <nav>
+    <div class="nav-wrapper blue darken-1">
+      <a  class="brand-logo " (click)="onHide()"><i class="button-collapse" data-activates="slide-out"></i><i class="material-icons">menu</i>UniversalWeb</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="https://recallhyx.github.io/"><i class="material-icons">forum</i></a></li>
+        <li><a href="#">组件</a></li>
+        <li><a href="#">JavaScript</a></li>
+      </ul>
     </div>
-  </div>
+  </nav>
+  <ul id="slide-out" class="side-nav">
+    <li><div class="userView">
+      <div class="background">
+        <img src="../assets/image/langscape.jpg">
+      </div>
+      <a  routerLink="/welcome"><img class="circle" src="../assets/avatar/boss.jpg"></a>
+      <a href="#"><span class=" name">{{name}}</span></a>
+      <a href="#"><span class=" email">{{email}}</span></a>
 
-</footer>
+    </div>
+    </li>
+
+    <li ><a class="waves-effect" routerLink="/moviesearch" (click)="onHide()"><i class="material-icons">movie</i>影视信息查询</a></li>
+    <li ><a class="waves-effect" routerLink="/identity" (click)="onHide()"><i class="material-icons">face</i>身份证信息查询</a></li>
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse hide" id="maodian"><i class="material-icons">menu</i></a>
+  <router-outlet></router-outlet>
+
+
+
+

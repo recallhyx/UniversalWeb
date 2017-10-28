@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+.bigbox{
+  width: 1920px;
+  height:950px;
+
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+#container{
+  position:relative;
+}
+
+#center{
+  position:absolute;
+  margin:auto;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+.floater {float:left; height:50%; margin-bottom:-120px;}
+.content {clear:both; height:240px; position:relative;}

@@ -6,12 +6,14 @@ import {FormsModule} from "@angular/forms";
 import {AppRoutingModule} from "./app.route";
 import {MovieComponent} from "./movie/movie.component";
 import {IdentityComponent} from "./identity/identity.component";
+import {WelcomeComponent} from "./welcome/welcome.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     MovieComponent,
-    IdentityComponent
+    IdentityComponent,
+    WelcomeComponent
   ],
   imports: [
     FormsModule,

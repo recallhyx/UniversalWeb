@@ -1,9 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-.bigbox{
-  width: 1920px;
-  height:950px;
-
-}
 body {
   display: flex;
   min-height: 100vh;

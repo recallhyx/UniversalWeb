@@ -1,4 +1,5 @@
 import {Component, ElementRef} from '@angular/core';
+import {AppService} from "./app.service";
 
 
 @Component({
@@ -7,13 +8,15 @@ import {Component, ElementRef} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-  constructor(private el:ElementRef){}
-  name = 'recall'
-  email = 'quce.hu@qq.com'
+  constructor(private el:ElementRef,public appservice:AppService){
 
+  }
+  name = 'recall';
+  email = 'quce.hu@qq.com';
+  title='UniversalWeb';
   onHide(){
     this.el.nativeElement.querySelector('#maodian').click();
   }
+
 }
 

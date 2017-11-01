@@ -7,6 +7,7 @@ import {AppRoutingModule} from "./app.route";
 import {MovieComponent} from "./movie/movie.component";
 import {IdentityComponent} from "./identity/identity.component";
 import {WelcomeComponent} from "./welcome/welcome.component";
+import {AppService} from "./app.service";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import {WelcomeComponent} from "./welcome/welcome.component";
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

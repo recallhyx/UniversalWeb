@@ -13,19 +13,28 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: 'welcome',
-    pathMatch: 'full'
+    pathMatch: 'full',
+    data:{title:'UniversalWeb'}
   },
   {
     path:'moviesearch',
-    component: MovieComponent
+    component: MovieComponent,
+    data:{title:'影视信息查询'}
   },
   {
     path:'identity',
-    component: IdentityComponent
+    component: IdentityComponent,
+    data:{title:'身份证信息查询'}
   },
   {
     path:'welcome',
-    component: WelcomeComponent
+    component: WelcomeComponent,
+    data:{title:'UniversalWeb'}
+  },
+  {
+    path:'**',
+    component: WelcomeComponent,
+    data:{title:'UniversalWeb'}
   }
 ];
 

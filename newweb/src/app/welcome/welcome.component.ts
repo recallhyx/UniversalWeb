@@ -2,6 +2,8 @@
  * Created by quceh_000 on 2017/10/27.
  */
 import { Component } from '@angular/core';
+import {AppService} from "../app.service";
+import {AppComponent} from "../app.component";
 
 @Component({
   selector: 'welcome',
@@ -10,4 +12,7 @@ import { Component } from '@angular/core';
 })
 export class WelcomeComponent {
 
+  constructor(private appcomponent:AppComponent){
+    appcomponent.title = 'UniversalWeb'
+  }
 }

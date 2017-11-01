@@ -3,7 +3,12 @@
 
   <nav>
     <div class="nav-wrapper blue darken-1">
-      <a  class="brand-logo " (click)="onHide()"><i class="button-collapse" data-activates="slide-out"></i><i class="material-icons">menu</i>UniversalWeb</a>
+      <a  class="brand-logo " (click)="onHide()">
+        <i class="button-collapse" data-activates="slide-out">
+
+        </i>
+        <i class="material-icons">menu</i><span >{{title}}</span>
+      </a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="https://recallhyx.github.io/"><i class="material-icons">forum</i></a></li>
         <li><a href="#">组件</a></li>

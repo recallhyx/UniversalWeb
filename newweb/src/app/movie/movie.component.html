@@ -1,5 +1,24 @@
+<ul id="tabs-swipe" class="tabs row">
+  <li class="tab col s6" ><a class="active" href="#search">影视搜索</a></li>
+  <li class="tab col s6"><a href="#recent">最近影讯</a></li>
+</ul>
+<div id="search" class="col s12">
+  <form class="vertical-center center" [ngClass]="{'vertical-center':isVerticalCenter}" >
+    <div class="row scale-transition"  [ngClass]="{'scale-out': isScaleOut}">
+      <div id="q_input" class="input-field  center col s6 offset-s3" >
+        <input id="name" type="text" class="validate">
+        <label for="name">名 字</label>
 
-  <h1>this is movie component</h1>
-  <h1>this is movie component</h1>
-  <h1>this is movie component</h1>
-  <h1>this is movie component</h1>
+      </div>
+
+    </div>
+    <div class="col center">
+      <button id="q_btn" class="btn pulse scale-transition "  [ngClass]="{'scale-out': isScaleOut}" (click)="onClick()">查询</button>
+    </div>
+  </form>
+</div>
+<div id="recent" class="col s12">
+
+</div>
+
+

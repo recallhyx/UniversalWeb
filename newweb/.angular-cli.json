@@ -8,7 +8,7 @@
       "root": "src",
       "outDir": "universalweb",
       "assets": [
-        "universalweb/assets",
+        "assets",
         "favicon.ico"
       ],
       "index": "index.html",
